@@ -11,6 +11,11 @@ jobs:
     name: Check tests and code quality
     runs-on: ubuntu-latest
     steps:
+      steps:
+  - name: "Dites Salut Mona nous sommes lundi"
+    run: echo "$GREETING $FIRST_NAME. Nous sommes $DAY_OF_WEEK!"
+    env:
+      FIRST_NAME: Mona
       - uses: actions/checkout@v3
       - name: Set up Python
         uses: actions/setup-python@v3
