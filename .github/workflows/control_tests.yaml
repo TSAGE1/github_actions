@@ -1,5 +1,7 @@
 name: Pytest & Flake8 Control Push
 on: push
+env:
+  DAY_OF_WEEK: Lundi
 jobs:
   qa:
     name: Check tests and code quality
