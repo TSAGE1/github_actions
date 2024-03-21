@@ -3,6 +3,10 @@ on: push
 env:
   DAY_OF_WEEK: Lundi
 jobs:
+  greeting_job:
+    runs-on: ubuntu-latest
+    env:
+      GREETING: "Salut"
   qa:
     name: Check tests and code quality
     runs-on: ubuntu-latest
